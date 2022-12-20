@@ -1,5 +1,6 @@
- # A very long statement that just goes on and on and on and on and
- # never ends until after it's reached the 80 char limit
+""" A very long statement that just goes on and on and on and on and
+  never ends until after it's reached the 80 char limit
+"""
 import os
 from flask import Flask
 from redis import Redis
@@ -12,6 +13,9 @@ app = Flask(__name__)
 # A very long statement that just goes on and on and on and on and
 # never ends until after it's reached the 80 char limit
 def hello():
+    """ azeazeazeaze
+  azeazeaze
+    """
     redis.incr('hits')
     hits = int(redis.get('hits'))
     return f"Hits: {hits}"
