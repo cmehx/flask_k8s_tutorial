@@ -24,6 +24,6 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Tag image to push
-      run: docker tag front mehhlol/front:v1
+      run: docker tag front:v1 mehhlol/front:v1
     - name: docker hub push
       run: docker push mehhlol/front:v1
