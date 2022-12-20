@@ -16,3 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file front/Dockerfile --tag front:v1
+    - name: Login to Docker Hub
+      run: docker images
