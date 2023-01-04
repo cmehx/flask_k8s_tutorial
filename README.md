@@ -1,4 +1,4 @@
-## Deploying Python Application using Docker and Kubernetes
+## Deploying Python Application using Docker and Kubernetes       
 
 I've learning how to deploy one Python application to Kubernetes. Here you can see my notes:
 
